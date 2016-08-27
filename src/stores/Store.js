@@ -1,4 +1,4 @@
-import { observable, computed } from 'mobx'
+import { observable, computed } from 'mobx';
 
 class Store {
   //Autorun is a function from MobX that runs everytime something inside is updated.
@@ -14,12 +14,12 @@ class Store {
   @observable numClicks = 0;
 
   @computed get oddOrEven() {
-    return this.numClicks % 2 === 0 ? 'even' : 'odd'
+    return this.numClicks % 2 === 0 ? 'even' : 'odd';
   }
 
   clickButton = () => {
-    this.numClicks++
+    this.numClicks++;
   }
 }
 
-export default Store
+export default Store;

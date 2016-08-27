@@ -99,6 +99,6 @@ module.exports = {
     "react/sort-comp": 1,
     "react/sort-prop-types": 1,
     "react/wrap-multilines": 1,
-    "semi": [2, "never"]
+    "semi": [2, "always"]
   }
 }
