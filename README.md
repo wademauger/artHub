@@ -23,7 +23,7 @@ Flow testing:  ``npm run typecheck``
 * [**MobX**](https://mobxjs.github.io/mobx/): State Management for React 
 * [**Flow**](http://flowtype.org/): Type Checker for Javascript 
 * [**ESLint**](http://eslint.org): JS / React linting 
-* **[Enzyme](http://airbnb.io/enzyme/) w/ [Jest](https://facebook.github.io/jest/)**: JS / React testing
+* **[Enzyme](http://airbnb.io/enzyme/) & [Jest](https://facebook.github.io/jest/)**: JS / React testing
 * [**React Hot Loader 3**](https://github.com/gaearon/react-hot-boilerplate/pull/61): Hot Loader for stateless components 
 * [**Why did you update**](https://github.com/garbles/why-did-you-update): no more unnecessary re-renders 
 
