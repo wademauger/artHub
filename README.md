@@ -1,6 +1,6 @@
 # React MobX Webpack Boilerplate
 
-Forked from [KadoBOT's Reaxor](https://github.com/KadoBOT/reaxor).
+Based on [KadoBOT's Reaxor](https://github.com/KadoBOT/reaxor).
 
 ## Installation
 ```
