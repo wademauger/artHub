@@ -15,7 +15,7 @@ Testing: ``npm test`` or ``npm run test:watch`` for watching file change or ``np
 Lint checking: ``npm run lint``  
 Flow testing:  ``npm run typecheck``  
 
-## Libraries Included by:
+## Libraries Included:
 * [**Webpack**](https://webpack.github.io/): Compiler and Optimizer 
 * [**Babel**](https://babeljs.io/): Transpiler tool 
 * [**MobX**](https://mobxjs.github.io/mobx/): State Management for React 
