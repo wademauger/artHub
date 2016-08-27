@@ -1,16 +1,13 @@
 import { observable, computed } from 'mobx';
+import {autorun} from 'mobx';
 
 class Store {
-  //Autorun is a function from MobX that runs everytime something inside is updated.
-  //In the example below, everytime 'numClicks' is updated, autorun will run the console.warn
-  //
-  // import {autorun} from 'mobx'
-  // constructor() {
-  //   autorun(() => console.warn('MobX autorun - Whenever numClicks has it value updated, console.log runs: ', this.numClicks))
-  // }
 
-  name = 'Reaxor';
-  description = 'React boilerplate for better state management, styling, testing and cleaner code';
+  constructor() {
+    autorun(() => console.warn('state: ', JSON.stringify(this)));
+  }
+
+  @observable description = 'Hello World!';
   @observable numClicks = 0;
 
   @computed get oddOrEven() {
@@ -20,6 +17,7 @@ class Store {
   clickButton = () => {
     this.numClicks++;
   }
+
 }
 
 export default Store;
