@@ -1,7 +1,5 @@
 # React MobX Webpack Boilerplate
 
-_Boilerplate for better state management, styling, testing and cleaner code_
-
 Forked from [KadoBOT's Reaxor](https://github.com/KadoBOT/reaxor).
 
 ## Installation
