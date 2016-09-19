@@ -4,7 +4,7 @@ Based on [KadoBOT's Reaxor](https://github.com/KadoBOT/reaxor).
 
 ## Installation
 ```
-git clone https://github.com/KadoBOT/reaxor.git
+git clone https://github.com/wadeanthony0100/React-MobX-Webpack-Boilerplate.git
 npm install
 ```
 
