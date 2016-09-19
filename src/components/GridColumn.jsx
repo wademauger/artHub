@@ -10,6 +10,7 @@ const GridColumn = ({store, index}) => {
       {columns[index].map((block, innerIndex) =>
         <GridBlock
           clickAction={store.clickBlock.bind(store, index, innerIndex)}
+          key={innerIndex}
           val={block}
         />
       )}

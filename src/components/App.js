@@ -9,6 +9,7 @@ const App = ({store}) => (
     {store.columns.map((column, index) => (
       <GridColumn
         index={index}
+        key={index}
         store={store}
       />
     ))}
