@@ -43,7 +43,7 @@ if (TARGET === 'start' || !TARGET) {
     module: {
       loaders: [
         { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel', 'eslint-loader'], include: path.join(__dirname, 'src')},
-        { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
+        { test: /\.css$/, loaders: ['style', 'css', 'resolve-url']},
       ],
     },
     progress: true,
@@ -61,7 +61,7 @@ if (TARGET === 'build') {
     module: {
       loaders: [
         { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel']},
-        { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
+        { test: /\.css$/, loaders: ['style', 'css', 'resolve-url']},
       ],
     },
     progress: true,

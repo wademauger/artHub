@@ -71,7 +71,7 @@ module.exports = {
 
     // react specific rules
     "react/display-name": 1,
-    "react/jsx-no-bind": 2,
+    "react/jsx-no-bind": 0,
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 1,
     "react/jsx-curly-spacing": 1,
