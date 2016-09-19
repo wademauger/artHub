@@ -1,5 +1,4 @@
 // @flow
-
 import React, {PropTypes} from 'react';
 import { observer } from 'mobx-react';
 

@@ -1,4 +1,4 @@
-import { observable, computed } from 'mobx';
+import { observable } from 'mobx';
 import {autorun} from 'mobx';
 
 class Store {
@@ -7,14 +7,63 @@ class Store {
     autorun(() => console.warn('state: ', JSON.stringify(this)));
   }
 
-  @observable column = [false, false, false, false, false, false, false];
+  columns = [
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  observable([false, false, false, false, false, false, false]),
+  ];
 
-  @computed get oddOrEven() {
-    return this.numClicks % 2 === 0 ? 'even' : 'odd';
-  }
-  
-  clickBlock = (index) => {
-    this.column[index] = !this.column[index];
+  clickBlock = (outerIndex, innerIndex) => {
+    this.columns[outerIndex][innerIndex] = !this.columns[outerIndex][innerIndex];
   }
 
 }
