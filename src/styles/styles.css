@@ -10,11 +10,11 @@
 }
 
 .blockOn {
-  background-color: lightgreen;
+  background-color: green;
 }
 
 .blockOff {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
 .GridColumn {
@@ -23,5 +23,8 @@
 
 .project {
   display: block;
+  margin:auto;
+  margin-top: 100px;
   width:800px;
+
 }
