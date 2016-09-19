@@ -4,6 +4,7 @@ import React, {PropTypes} from 'react';
 import { observer } from 'mobx-react';
 
 const MyComponent = ({store}) => {
+  console.log('in mc: ', store)
   const {clickButton, numClicks, oddOrEven} = store;
   return (
     <div className="MyComponent">

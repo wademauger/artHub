@@ -7,15 +7,14 @@ class Store {
     autorun(() => console.warn('state: ', JSON.stringify(this)));
   }
 
-  @observable description = 'Hello World!';
-  @observable numClicks = 0;
+  @observable column = [false, false, false, false, false, false, false];
 
   @computed get oddOrEven() {
     return this.numClicks % 2 === 0 ? 'even' : 'odd';
   }
-
-  clickButton = () => {
-    this.numClicks++;
+  
+  clickBlock = (index) => {
+    this.column[index] = !this.column[index];
   }
 
 }
